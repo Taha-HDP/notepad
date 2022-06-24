@@ -1,0 +1,4 @@
+{
+    "jwtPrivetKey" : "adminHDPsecret" ,
+    "databaseaddress" : "mongodb://localhost:27017/NotePad" 
+}
