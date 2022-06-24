@@ -77,3 +77,54 @@ article {
     left: 25%;
     top: 44px;
 }
+@media (max-width : 64rem) {
+    .note {
+        width: 90%;
+    }
+}
+@media (max-width : 47rem) {
+    header h1 {
+        font-size: 1rem;
+        margin: 1rem 5%;
+    }
+    .note{
+        margin: 0.5rem 1%;
+        box-shadow: 0px 3px 5px rgb(104 104 104);
+    }
+    .noteName {
+        font-size: 1rem;
+    }
+    .noteDate {
+        font-size: 0.8rem;
+    }
+    .addNote {
+        width: 70px;
+        height: 70px;
+    }
+    .addNote::before {
+        width: 30px;
+        left: 30%;
+        top: 33px;
+    }    
+    .addNote::after {
+        height: 30px;
+        top: 27%;
+        left: 34px;
+    }
+}
+@media (max-width : 30rem) {
+    .note {
+        width: 85%;
+        border-radius: 10px;
+    }
+    .noteName {
+        font-size: 0.9rem;
+    }
+    .noteDate {
+        font-size: 0.7rem;
+    }
+    .note span {
+        right: 10%;
+        top: 20%;
+    }
+}

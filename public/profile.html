@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/solid.min.css">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/basic.css">
-    <link rel="stylesheet" href="./CSS/home.css">
-    <title>NotePad | Home</title>
+    <link rel="stylesheet" href="./CSS/profile.css">
+    <title>NotePad | Profile</title>
 </head>
 
 <body>
     <header>
-        <h1>My Note</h1>
+        <h1>My Profile</h1>
     </header>
     <aside class="navigation">
         <ul>
-            <li class="list active">
+            <li class="list">
                 <a href="/home.html">
                     <span class="icon">
                         <i class="fas fa-house-chimney"></i>
@@ -29,7 +29,7 @@
                     <span class="title">Home</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list active">
                 <a href="/profile.html">
                     <span class="icon">
                         <i class="fas fa-user"></i>
@@ -64,26 +64,25 @@
         </ul>
     </aside>
     <article>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
+        <form>
+            <label for="username">Username :</label>
+            <input type="text" readonly onfocus="this.removeAttribute('readonly');" name="username" placeholder="Username">
+            <label for="email">Email :</label>
+            <input type="email" name="email" placeholder="YourEmail@gmail.com">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="First Name">
+            <label for="fname">Last Name</label>
+            <input type="text" name="lname" placeholder="Last Name">
+            <input type="button" value="Save" class="btn">
+        </form>
+        <form>
+            <h2>change password</h2>
+            <label for="current-pass">Current Password</label>
+            <input name="current-pass" type="password" readonly onfocus="this.removeAttribute('readonly');" placeholder="Current password">
+            <label for="new-pass">New Password</label>
+            <input name="new-pass" type="password" placeholder="New password">
+            <input type="button" value="Change" class="btn">
+        </form>
     </article>
     <div class="addNote"></div>
     <script src="./jquery.js"></script>

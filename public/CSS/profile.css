@@ -1,0 +1,78 @@
+header h1 ,h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(199 199 199);
+    margin: 2rem 5% 0;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(129 129 129);
+}
+h2{
+    margin: 1rem 0% ;
+}
+form {
+    margin: 0 90px 0 5%;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgb(199 199 199);
+}
+form label {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1.2rem 0 0.7rem;
+    color: #6ba4ff;
+}
+form input {
+    padding: 1rem 2%;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-color: #bdbdbd;
+}
+.btn {
+    width: 15% !important;
+    margin-left: 20%;
+    background-color: #4187f6b0;
+    cursor: pointer;
+    transition : 500ms
+}
+.btn:hover{
+    background-color: #4187f6;
+    transition : 500ms
+}
+
+@media (max-width : 47rem) {
+    header h1{
+        font-size: 1rem;
+        margin: 1rem 5%;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    form {
+        margin: 0px 70px 0 5%;
+        padding: 0rem 0 1rem;
+    }
+    form label {
+        font-size: 1rem;
+        margin: 1rem 0 0.7rem;
+    }
+    form input{
+        width: 50%;
+    }
+    .btn {
+        width: 20% !important;
+        margin-left: 15%;
+    }
+
+}
+@media (max-width : 30rem) {
+    form input{
+        width: 90%;
+    }
+    .btn {
+        width: 30% !important;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}

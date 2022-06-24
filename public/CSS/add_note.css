@@ -1,3 +1,6 @@
+article{
+    margin-right: 55px;
+}
 header h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -13,7 +16,6 @@ form{
     flex-direction: column;
     padding: 0 5%;
 }
-
 #note_name {
     width: 80%;
     padding: 1rem 2%;
@@ -52,11 +54,8 @@ form{
     30%{transform: rotate(1deg);}
     40%{transform: rotate(-1deg);}
 }
-
 footer {
-    position: absolute;
-    bottom: 3%;
-    left: 40%;
+    margin: 10rem 0 2rem 40%;
 }
 footer .icons{
     display: flex;
@@ -103,4 +102,32 @@ footer .icon-email:hover{
     20%{transform: rotate(-15deg);}
     30%{transform: rotate(15deg);}
     40%{transform: rotate(-15deg);}
+}
+@media (max-width : 47rem) {
+    header h1 {
+        font-size: 1rem;
+        margin: 1rem 5%;
+    }
+    #note_name ,
+    #note_data {
+        width: 90%;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    footer {
+        margin: 8rem 0 2rem 30%;
+    }
+    footer .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+@media (max-width : 30rem) {
+    footer {
+        margin: 8rem 0 2rem 15%;
+    }
+    footer .icons {
+        column-gap: 15px;
+    }
 }

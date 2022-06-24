@@ -22,9 +22,7 @@ article{
 }
 
 footer {
-    position: absolute;
-    bottom: 10%;
-    left: 40%;
+    margin: 7rem 0 2rem 40%;
 }
 footer .icons{
     display: flex;
@@ -71,4 +69,36 @@ footer .icon-email:hover{
     20%{transform: rotate(-15deg);}
     30%{transform: rotate(15deg);}
     40%{transform: rotate(-15deg);}
+}
+@media (max-width : 47rem) {
+    header h1 {
+        font-size: 1rem;
+        margin: 1rem 5%;
+    }
+    article{
+        font-size: 1rem;
+        margin-left: 3%;
+        margin-right: 90px;
+        width: unset;
+    }
+    footer {
+        margin: 8rem 0 2rem 30%;
+    }
+    footer .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+@media (max-width : 30rem) {
+    article{
+        margin-right: 70px;
+        border-radius: 10px;
+    }
+    footer {
+        margin: 8rem 0 2rem 15%;
+    }
+    footer .icons {
+        column-gap: 15px;
+    }
 }

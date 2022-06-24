@@ -85,3 +85,26 @@ aside {
     font-family: 'lato',sans-serif;
     font-size: 1.2rem;
 }
+@media (max-width : 47rem) {
+    .navigation{
+        width: 40px;
+    }
+    .navigation ul li a .icon {
+        min-width: 40px;
+        height: 40px;
+        line-height: 60px;
+    }
+    .navigation ul li a .icon i {
+        font-size: 1em;
+        color: #fff;
+    }
+    .navigation ul li a .title{
+        padding-left: 10px;
+        height: 60px;
+        line-height: 64px;
+        font-size: 0.9rem;
+    }
+    .navigation:hover{
+        width: 150px;
+    }
+}
