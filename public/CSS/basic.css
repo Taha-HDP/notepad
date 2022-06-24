@@ -1,0 +1,87 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+html{
+    background-color: #232c33;
+    font-family: 'lato',sans-serif;
+}
+aside {
+    width: max-content;
+    min-height: max-content;
+    background-color: #232c33;
+}
+.navigation{
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 55px;
+    background-color: #2b343b;
+    box-shadow: -10px 0 0 #4187f6;
+    overflow-x: hidden;
+    transition: all .2s linear;
+    transform-origin: left center;
+}
+.navigation:hover{
+    width: 300px;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    direction : rtl
+}
+.navigation ul li:hover{
+    background-color: #202c36;
+}
+.navigation ul li.active{
+    background-color: #4187f6;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.navigation ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li.active a::before,
+.navigation ul li.active a::after{
+    content: "";
+    position: absolute;
+    left : 0 ;
+    top: -30px;
+    background-color: #2b343b;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -15px 15px 0 #4187f6;
+    z-index: -1;
+}
+.navigation ul li.active a::after{
+    top: auto;
+    bottom: -30px;
+    box-shadow: -15px -15px 0 #4187f6;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon i{
+    font-size: 1.3em;
+    color: #fff;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    font-family: 'lato',sans-serif;
+    font-size: 1.2rem;
+}

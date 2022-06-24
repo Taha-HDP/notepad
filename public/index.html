@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/regular.min.css">
+    <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/solid.min.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>NotePad | Login</title>
+</head>
+
+<body>
+    <article>
+        <form action="/home.html" autocomplete="off" id="inputs">
+            <h2><span class="entypo-login"><i class="fa fa-sign-in"></i></span> Login</h2>
+            <button class="submit"><span class="entypo-lock"><i class="fa fa-lock"></i></span></button>
+            <span class="entypo-user inputUserIcon">
+                <i class="fa fa-user"></i>
+            </span>
+            <input type="text" class="user" readonly onfocus="this.removeAttribute('readonly');" autocomplete="false" placeholder="ursername" />
+            <span class="entypo-key inputPassIcon">
+                <i class="fa fa-key"></i>
+            </span>
+            <input type="password" class="pass" autocomplete="false" placeholder="password" />
+            <p><a href="#">forget your password ?</a></p>
+            <p id="signup">don't have an account ? create know</p>
+        </form>
+        <div class="Signup" style="display: none ;">
+            <div class="back"></div>
+            <div class="registration-form">
+                <header>
+                    <h1>Sign Up</h1>
+                    <p>Fill in all informations</p>
+                    <h3 id="backStep">Back</h3>
+                </header>
+                <form>
+                    <div class="input-section email-section 1">
+                        <input class="email" readonly onfocus="this.removeAttribute('readonly');" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" />
+                        <div class="animated-button"><span class="icon-paper-plane"><i
+                                    class="fa fa-envelope-o"></i></span><span class="next-button email"><i
+                                    class="fa fa-arrow-up"></i></span></div>
+                    </div>
+                    <div class="input-section password-section 2 folded">
+                        <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE" />
+                        <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span
+                                class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+                    </div>
+                    <div class="input-section repeat-password-section 3 folded">
+                        <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE" />
+                        <div class="animated-button"><span class="icon-repeat-lock"><i
+                                    class="fa fa-lock"></i></span><span class="next-button repeat-password"><i
+                                    class="fa fa-paper-plane"></i></span></div>
+                    </div>
+                    <div class="success">
+                        <p>ACCOUNT CREATED</p>
+                    </div>
+                </form>
+                <p id="having_account">alredy have an account ? Login</p>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="icons">
+            <a href="https://www.instagram.com/taha_hdp" class="icon icon-instagram">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/Taha_HDP" class="icon icon-twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://github.com/Taha-HDP" class="icon icon-github">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="mailto:taha.hoveidapour@example.com" class="icon icon-email">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="./jquery.js"></script>
+    <script src="./base_script.js"></script>
+</body>
+
+</html>

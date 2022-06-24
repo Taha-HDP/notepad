@@ -1,0 +1,79 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(199 199 199);
+    margin: 2rem 5%;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(129 129 129);
+}
+article {
+    width: 92%;
+    margin: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(88 88 88);
+}
+.note {
+    border-bottom: 2px solid #a9a6a6;
+    width: 48%;
+    padding: 1rem 2%;
+    line-height: 1.6;
+    background-color: rgb(65 135 246 / 32%);
+    border-radius: 20px;
+    margin: 1rem 1%;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgb(104 104 104);
+    position: relative;
+    box-sizing: border-box;
+}
+.note span {
+    position: absolute;
+    right: 6%;
+    top: 25%;
+    transform: translateY(50%) translateX(50%);
+}
+.note span i{
+    font-size: 1.3em;
+    color: rgb(255, 81, 81);
+}
+.noteName {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(199 199 199);
+    display: inline-block;
+}
+.noteDate{
+    color: rgb(133 133 133);
+}
+.addNote {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(199 199 199);
+    margin: 2rem 3%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline-offset: 4px;
+    outline: inset;
+    outline-color: white;
+}
+.addNote::after {
+    content: "";
+    position: absolute;
+    border-right: 3px solid rgb(45 73 114);
+    height: 45px;
+    top: 25%;
+    left: 44px;
+}
+.addNote::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid rgb(45 73 114);
+    width: 45px;
+    left: 25%;
+    top: 44px;
+}

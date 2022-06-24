@@ -1,0 +1,307 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body{
+    background-color: #232c33;
+    font-family: 'lato',sans-serif;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+#inputs h2 {
+    color: rgba(255,255,255,.8);
+    margin-left: 2%;
+    font-size: 1.5rem;
+}
+#inputs p{
+    color: rgba(255,255,255,.8);
+    margin: 15px;
+    cursor: pointer;
+}
+#inputs {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#inputs input {
+    padding: 16px;
+    border-radius: 7px;
+    border: 0px;
+    background: rgba(255,255,255,.2);
+    display: block;
+    margin: 15px;
+    width: 75%;
+    color: white;
+    font-size: 1rem;
+    height: 55px;
+}
+#inputs input:focus {
+  outline-color: rgba(0,0,0,0);
+  background: rgba(255,255,255,.95);
+  color: #4187f6;
+}
+#inputs button {
+    margin-top: 15px;
+    float: right;
+    height: 121px;
+    width: 50px;
+    border: 0px;
+    background: #4187f6;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.inputUserIcon {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    color: white;
+}
+.inputPassIcon {
+  position:absolute;
+  top:130px;
+  right: 80px;
+  color:white;
+}
+#inputs input::-webkit-input-placeholder {
+  color: white;
+}
+#inputs input:focus::-webkit-input-placeholder {
+  color: #4187f6;
+}
+
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.registration-form {
+    max-width: 600px;
+    width: 70%;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%, 0%);
+    top: 30%;
+    background: transparent;
+}
+.registration-form header {
+    position: relative;
+    z-index: 4;
+    background: #2b343b;
+    padding: 20px 40px;
+    border-radius: 15px 15px 0 0;
+}
+.registration-form header h1 {
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #c1c1c1;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.registration-form header p {
+    word-spacing: 0px;
+    color: #9facb6;
+    font-size: 17px;
+    margin: 0;
+    margin-top: 5px;
+}
+.registration-form form {
+    position: relative;
+}
+.registration-form .input-section {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 75px;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+.registration-form .input-section.folded {
+    width: 95%;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+.registration-form .input-section.folded input {
+    background-color: #e9e2c0;
+}
+.registration-form .input-section.folded span {
+    background-color: #e9e2c0;
+}
+.registration-form .input-section.folded + .folded {
+    width: 90%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+}
+.registration-form .input-section.folded + .folded input {
+    background-color: #e1bcef;
+}
+.registration-form .input-section.folded + .folded span {
+    background-color: #e1bcef;
+}
+.registration-form .input-section.fold-up {
+    margin-top: -75px;
+}
+.registration-form form input {
+    background: rgb(147 143 143);
+    color: #383838;
+    width: 80%;
+    border: 0;
+    padding: 20px 40px;
+    margin: 0;
+}
+.registration-form form input:focus {
+    outline: none;
+}
+.registration-form form input::placeholder {
+    color: #383838;
+    font-weight: 100;
+}
+.animated-button {
+    width: 20%;
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+.animated-button span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 75px;
+    text-align: center;
+    height: 75px;
+    transition: all 0.2s ease-in;
+}
+.animated-button span i {
+    font-size: 1.5rem;
+    color: #3c3c3c;
+}
+.animated-button .next-button {
+    background: transparent;
+    color: #505050;
+    font-weight: 100;
+    width: 100%;
+    border: 0;
+}
+.next {
+    margin-top: -75px;
+}
+.success {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 75px;
+    border-radius: 5px 5px 15px 15px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+    background: #4187f6;
+    margin-top: -75px;
+    cursor: pointer;
+}
+.success p {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+#backStep{
+    text-align: right;
+    color: rgb(213 213 213);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#having_account {
+    position: absolute;
+    top: 13rem;
+    left: 25%;
+    color: rgb(213 213 213);
+    cursor: pointer;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+.icons{
+    display: flex;
+    column-gap: 25px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset ,outline-color,background-color ;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .25s;
+}
+.icon-instagram:hover {
+    background-image: linear-gradient(38deg, #fdf497 0% , #fdf497 5% , #fd5949 45% , #d6249f 60% , #285AEB 90% );
+    outline-color: #d6249f ;
+}
+.icon-twitter:hover{
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+.icon-github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+.icon-email:hover{
+    background-color: #0075b5;
+    outline-color: #0075b5;
+}
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
