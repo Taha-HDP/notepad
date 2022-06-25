@@ -8,10 +8,7 @@ $(".pass").focusin(function () {
 }).focusout(function () {
     $(".inputPassIcon").css("color", "white");
 });
-$(".submit").click(() => {
-    window.location.href = "/home.html";
-    return false;
-});
+
 $("#signup").click(() => {
     document.getElementById("inputs").style.display = "none";
     document.getElementsByClassName("Signup")[0].style.display = "block";
@@ -73,25 +70,25 @@ $('.repeat-password').on("change keyup paste",
         }
     }
 );
-$('.next-button.repeat-password').click(
-    function () {
-        $('.repeat-password-section').addClass("fold-up");
-        $('.success').css("marginTop", 0);
-        $("#backStep").text("");
-        step++;
-    }
+$('.next-button.repeat-password').click(()=>{
+    $('.repeat-password-section').addClass("fold-up");
+    $('.success').css("marginTop", 0);
+    $("#backStep").text("");
+    step++;
+}
 );
+$('.success').click(()=>{
+    window.location.assign("/home.html");
+})
 $("#backStep").click(() => {
-    if (step == 3 || step == 0)
+    if (step == 0)
         return 0;
     $("." + step).removeClass("fold-up");
     let secound = step + 1;
     $("." + secound).addClass("folded");
     step--;
 })
-$('.success').click(() => {
-    window.location.href = "/home.html"
-});
+
 $(".addNote").click(() => {
     window.location.assign("/add_note.html")
-})
+});

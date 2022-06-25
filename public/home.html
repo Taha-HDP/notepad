@@ -19,6 +19,12 @@
     <header>
         <h1>My Note</h1>
     </header>
+    <div id="notfication">
+        <div id="notif_icon">
+            <div id="notif_image"></div>
+        </div>
+        <p></p>
+    </div>
     <aside class="navigation">
         <ul>
             <li class="list active">
@@ -53,8 +59,8 @@
                     <span class="title">Contact Us</span>
                 </a>
             </li>
-            <li class="list">
-                <a href="/">
+            <li class="list" id="exit_acc">
+                <a href="#">
                     <span class="icon">
                         <i class="fas fa-circle-xmark"></i>
                     </span>
@@ -63,31 +69,13 @@
             </li>
         </ul>
     </aside>
-    <article>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
-        <div class="note">
-            <h3 class="noteName">saved name for this Note</h3>
-            <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
-            <p class="noteDate">2022-05-05</p>
-        </div>
+    <article id="main">
     </article>
     <div class="addNote"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./jquery.js"></script>
-    <script src="./base_script.js"></script>
+    <script src="./front_script.js"></script>
+    <script src="./AJAXs.js"></script>
 </body>
 
 </html>

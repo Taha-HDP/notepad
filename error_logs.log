@@ -1,0 +1,33 @@
+{"level":"error","message":"Customer is not defined"}
+{"level":"error","message":"Customer is not defined"}
+{"level":"error","message":"E11000 duplicate key error collection: NotePad.members index: username_1 dup key: { username: null }"}
+{"level":"error","message":"Customer is not defined"}
+{"level":"error","message":"Notes is not defined"}
+{"level":"error","message":"item is not defined"}
+{"level":"error","message":"Query was already executed: member.update({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1e69..."}
+{"level":"error","message":"Query was already executed: member.updateOne({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1..."}
+{"level":"error","message":"Query was already executed: member.updateOne({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1..."}
+{"level":"error","message":"Query was already executed: member.updateOne({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1..."}
+{"level":"error","message":"Query was already executed: member.updateOne({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1..."}
+{"level":"error","message":"Query was already executed: member.updateOne({}, {\n  '$set': { 'notes.$.name': 'Note 2',..."}
+{"level":"error","message":"Query was already executed: member.updateOne({}, {\n  '$set': { 'notes.$.name': 'Note 2',..."}
+{"level":"error","message":"Query was already executed: member.updateOne({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1..."}
+{"level":"error","message":"Query was already executed: member.updateOne({ 'notes._id': new ObjectId(\"62b6e4a78bd8d1..."}
+{"level":"error","message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" because of \"BSONTypeError\""}
+{"level":"error","message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" because of \"BSONTypeError\""}
+{"level":"error","message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" because of \"BSONTypeError\""}
+{"level":"error","message":"Callback must be a function, got true"}
+{"level":"error","message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" because of \"BSONTypeError\""}
+{"level":"error","message":"Query was already executed: member.updateOne({ _id: new ObjectId(\"62b6cb8028674395dfaa7c..."}
+{"level":"error","message":"Cannot use 'in' operator to search for 'strict' in false"}
+{"level":"error","message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" because of \"BSONTypeError\""}
+{"level":"error","message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" because of \"BSONTypeError\""}
+{"level":"error","message":"Invalid status code: 3495"}
+{"level":"error","message":"Invalid status code: 2213"}
+{"level":"error","message":"Invalid status code: 9433"}
+{"level":"error","message":"Invalid status code: 1408"}
+{"level":"error","message":"Member is not defined"}
+{"level":"error","message":"Cannot read properties of null (reading 'createAuthToken')"}
+{"level":"error","message":"Cannot read properties of null (reading 'createAuthToken')"}
+{"level":"error","message":"Cannot read properties of null (reading 'createAuthToken')"}
+{"level":"error","message":"Cannot read properties of null (reading 'createAuthToken')"}

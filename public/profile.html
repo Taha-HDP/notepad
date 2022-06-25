@@ -19,6 +19,12 @@
     <header>
         <h1>My Profile</h1>
     </header>
+    <div id="notfication">
+        <div id="notif_icon">
+            <div id="notif_image"></div>
+        </div>
+        <p></p>
+    </div>
     <aside class="navigation">
         <ul>
             <li class="list">
@@ -66,27 +72,30 @@
     <article>
         <form>
             <label for="username">Username :</label>
-            <input type="text" readonly onfocus="this.removeAttribute('readonly');" name="username" placeholder="Username">
+            <input type="text" id="username" readonly onfocus="this.removeAttribute('readonly');" name="username" placeholder="Enter your Username">
             <label for="email">Email :</label>
-            <input type="email" name="email" placeholder="YourEmail@gmail.com">
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" placeholder="First Name">
-            <label for="fname">Last Name</label>
-            <input type="text" name="lname" placeholder="Last Name">
-            <input type="button" value="Save" class="btn">
+            <input type="email" id="email" name="email" placeholder="YourEmail@gmail.com">
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+            <label for="fname">Last Name :</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Last Name">
+            <input type="button" value="Save" class="btn" id="change_info">
         </form>
         <form>
             <h2>change password</h2>
-            <label for="current-pass">Current Password</label>
-            <input name="current-pass" type="password" readonly onfocus="this.removeAttribute('readonly');" placeholder="Current password">
-            <label for="new-pass">New Password</label>
-            <input name="new-pass" type="password" placeholder="New password">
-            <input type="button" value="Change" class="btn">
+            <label for="current-pass">Current Password :</label>
+            <input name="current-pass" id="current_pass" type="password" readonly onfocus="this.removeAttribute('readonly');" placeholder="Current password">
+            <label for="new-pass">New Password :</label>
+            <input name="new-pass" id="new_pass" type="password" placeholder="New password">
+            <input type="button" value="Change" id="change_password" class="btn">
+            <p><a href="/forget_password.html">forget your password ?</a></p>
         </form>
     </article>
     <div class="addNote"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./jquery.js"></script>
-    <script src="./base_script.js"></script>
+    <script src="./front_script.js"></script>
+    <script src="./AJAXs.js"></script>
 </body>
 
 </html>

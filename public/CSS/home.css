@@ -8,6 +8,11 @@ header h1 {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid rgb(129 129 129);
 }
+a{
+    text-decoration: none;
+    color: unset;
+    width: 95%;
+}
 article {
     width: 92%;
     margin: 0 2%;
@@ -28,16 +33,20 @@ article {
     box-shadow: 0px 5px 5px rgb(104 104 104);
     position: relative;
     box-sizing: border-box;
+    display: flex;
 }
 .note span {
     position: absolute;
-    right: 6%;
-    top: 25%;
+    right: 4%;
+    top: 10%;
     transform: translateY(50%) translateX(50%);
+    width: 5%;
+    height: 50%;
 }
 .note span i{
     font-size: 1.3em;
     color: rgb(255, 81, 81);
+    vertical-align: sub;
 }
 .noteName {
     font-size: 1.3rem;
@@ -81,8 +90,12 @@ article {
     .note {
         width: 90%;
     }
+    a{
+        width: 90%;
+    }
 }
 @media (max-width : 47rem) {
+    
     header h1 {
         font-size: 1rem;
         margin: 1rem 5%;
@@ -113,6 +126,9 @@ article {
     }
 }
 @media (max-width : 30rem) {
+    a {
+        width: 85%;
+    }
     .note {
         width: 85%;
         border-radius: 10px;
@@ -125,6 +141,6 @@ article {
     }
     .note span {
         right: 10%;
-        top: 20%;
+        top: 8%;
     }
 }

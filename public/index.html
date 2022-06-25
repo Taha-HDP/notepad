@@ -9,25 +9,33 @@
     <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/regular.min.css">
     <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/solid.min.css">
+    <link rel="stylesheet" href="./CSS/basic.css">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/index.css">
     <title>NotePad | Login</title>
 </head>
 
 <body>
+    <div id="notfication">
+        <div id="notif_icon">
+            <div id="notif_image"></div>
+        </div>
+        <p></p>
+    </div>
     <article>
         <form action="/home.html" autocomplete="off" id="inputs">
             <h2><span class="entypo-login"><i class="fa fa-sign-in"></i></span> Login</h2>
             <button class="submit"><span class="entypo-lock"><i class="fa fa-lock"></i></span></button>
             <span class="entypo-user inputUserIcon">
-                <i class="fa fa-user"></i>
+                <i class="fas fa-user"></i>
             </span>
-            <input type="text" class="user" readonly onfocus="this.removeAttribute('readonly');" autocomplete="false" placeholder="ursername" />
+            <input type="text" id="username_input" class="user" readonly onfocus="this.removeAttribute('readonly');" autocomplete="false" placeholder="ursername" />
             <span class="entypo-key inputPassIcon">
-                <i class="fa fa-key"></i>
+                <i class="fas fa-key"></i>
             </span>
-            <input type="password" class="pass" autocomplete="false" placeholder="password" />
-            <p><a href="#">forget your password ?</a></p>
+            <input type="password" id="password_input" class="pass" autocomplete="false" placeholder="password" />
+            <p><a href="/forget_password.html">forget your password ?</a></p>
+            <br>
             <p id="signup">don't have an account ? create know</p>
         </form>
         <div class="Signup" style="display: none ;">
@@ -40,13 +48,13 @@
                 </header>
                 <form>
                     <div class="input-section email-section 1">
-                        <input class="email" readonly onfocus="this.removeAttribute('readonly');" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" />
+                        <input class="email" id="email_input" readonly onfocus="this.removeAttribute('readonly');" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" />
                         <div class="animated-button"><span class="icon-paper-plane"><i
                                     class="fa fa-envelope-o"></i></span><span class="next-button email"><i
                                     class="fa fa-arrow-up"></i></span></div>
                     </div>
                     <div class="input-section password-section 2 folded">
-                        <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE" />
+                        <input class="password" id="signUp_pass" type="password" placeholder="ENTER YOUR PASSWORD HERE" />
                         <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span
                                 class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
                     </div>
@@ -67,21 +75,23 @@
     <footer>
         <div class="icons">
             <a href="https://www.instagram.com/taha_hdp" class="icon icon-instagram">
-                <i class="fas fa-instagram"></i>
+                <i class="fa fa-instagram"></i>
             </a>
             <a href="https://twitter.com/Taha_HDP" class="icon icon-twitter">
-                <i class="fas fa-twitter"></i>
+                <i class="fa fa-twitter"></i>
             </a>
             <a href="https://github.com/Taha-HDP" class="icon icon-github">
-                <i class="fas fa-github"></i>
+                <i class="fa fa-github"></i>
             </a>
             <a href="mailto:taha.hoveidapour@example.com" class="icon icon-email">
-                <i class="fas fa-envelope"></i>
+                <i class="fa fa-envelope"></i>
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./jquery.js"></script>
-    <script src="./base_script.js"></script>
+    <script src="./front_script.js"></script>
+    <script src="./AJAXs.js"></script>
 </body>
 
 </html>

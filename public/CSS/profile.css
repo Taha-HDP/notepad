@@ -15,6 +15,15 @@ form {
     padding: 1rem 0;
     border-bottom: 2px solid rgb(199 199 199);
 }
+a{
+    color: unset;
+    text-decoration: none;
+}
+form p{
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-top: 1rem;
+}
 form label {
     display: block;
     font-size: 1.5rem;

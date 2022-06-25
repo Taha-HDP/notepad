@@ -5,10 +5,9 @@ const schema_note = new mongoose.Schema({
     name: { type: String, required: true },
     text: { type: String, required: true },
     create_date : String ,
-    father_id : String ,
 })
 const schema = new mongoose.Schema({
-    username: { type: String, unique: true },
+    username: { type: String , unique : true },
     first_name: String,
     last_name: String,
     email: { type: String, unique: true },
