@@ -32,6 +32,7 @@ a{
 #inputs {
     position: absolute;
     width: 30%;
+    min-width: 490px;
     height: auto;
     top: 50%;
     left: 50%;
@@ -303,4 +304,83 @@ footer {
     20%{transform: rotate(-15deg);}
     30%{transform: rotate(15deg);}
     40%{transform: rotate(-15deg);}
+}
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+@media (max-width : 47rem) {
+    header h1 {
+        font-size: 1rem;
+        margin: 1rem 5%;
+    }
+    #note_name ,
+    #note_data {
+        width: 90%;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    footer {
+        margin: 8rem 0 2rem -13%;
+    }
+    footer .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    #inputs{
+        min-width: 330px;
+    }
+    #inputs h2 {
+        font-size: 1.2rem;
+        margin-left: 5%;
+    }
+    #inputs input {
+        padding: 10px;
+        height: 50px;
+        width: 65%;
+    }
+    .inputUserIcon {
+        top: 50px;
+        right: 65px
+    }
+    .inputPassIcon {
+        right: 65px ;
+        top: 115px;
+    }
+    #inputs p {
+        margin: 9px 0 9px 5%;
+    }
+}
+@media (max-width : 30rem) {
+    footer {
+        margin: 8rem 0 2rem -20%;
+    }
+    footer .icons {
+        column-gap: 15px;
+    }
+    .registration-form header h1 {
+        font-size: 1rem;
+    }
+    .registration-form header p {
+        font-size: 0.8rem;
+    }
+    #backStep {
+        font-size: 1rem;
+    }
+    .registration-form header {
+        padding: 17px 20px;
+    }
+    .registration-form {
+        width: 90%;
+        left: 50%;
+    }
+    #having_account {
+        left: 15%;
+    }
+    .registration-form form input {
+        padding: 15px 15px;
+    }
 }
