@@ -1,6 +1,6 @@
 const domain = "http://localhost:3000";
 $(document).ready(() => {
-    if (window.location.pathname != "/") {
+    if (window.location.pathname != "/" && window.location.pathname != "/forget_password.html" ) {
         const token = localStorage.getItem("token");
         if (!token)
             window.location.assign("/")
